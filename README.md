@@ -568,8 +568,9 @@ Proprietary - PTSC Internal Use Only
 
 ## 👥 Support
 
-For issues or questions, contact the development team.
-
+For issues or questions, contact:
+Nguyễn Thị Thanh Hương
+PTSC Industrial Division
+Hotline: 0934 914 173
 ---
-
 **Built with ❤️ for PTSC**
