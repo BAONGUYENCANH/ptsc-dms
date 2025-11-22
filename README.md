@@ -554,14 +554,6 @@ lsof | grep project_data.db
 # Restart
 systemctl start ptsc-backend
 ```
-
-## 📚 Additional Resources
-
-- [DigitalOcean App Platform Docs](https://docs.digitalocean.com/products/app-platform/)
-- [GitHub Student Pack](https://education.github.com/pack)
-- [Flask Deployment](https://flask.palletsprojects.com/en/3.0.x/deploying/)
-- [Vite Production Build](https://vitejs.dev/guide/build.html)
-
 ## 📝 License
 
 Proprietary - PTSC Internal Use Only
