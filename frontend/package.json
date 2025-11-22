@@ -1,0 +1,68 @@
+{
+  "name": "ptsc-mdi-dashboard",
+  "version": "1.0.0",
+  "description": "PTSC Document Control - React App + Electron",
+  "main": "dist-electron/main.js",
+  "build": {
+    "appId": "com.ptsc.document-control",
+    "productName": "PTSC Document Control",
+    "win": {
+      "icon": "assets/ptsc_logo.ico",
+      "target": [
+        "nsis"
+      ]
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "dev:electron": "concurrently \"npm run dev\" \"wait-on http://localhost:5173 && cross-env NODE_ENV=development electron .\"",
+    "dev:electron:debug": "cross-env NODE_ENV=development electron .",
+    "build": "tsc && vite build",
+    "build:electron": "tsc -p tsconfig.electron.json && vite build",
+    "electron": "electron .",
+    "rebuild": "electron-rebuild -f -w better-sqlite3",
+    "package": "npm run build:electron && electron-builder",
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:ui": "vitest --ui"
+  },
+  "dependencies": {
+    "@radix-ui/react-dialog": "^1.1.15",
+    "@radix-ui/react-popover": "^1.1.15",
+    "@radix-ui/react-separator": "^1.1.8",
+    "@tanstack/react-table": "^8.20.5",
+    "better-sqlite3": "^12.4.1",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "cmdk": "^1.1.1",
+    "dayjs": "^1.11.13",
+    "lucide-react": "^0.447.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "recharts": "^2.12.7",
+    "sonner": "^2.0.7",
+    "tailwind-merge": "^2.5.4",
+    "xlsx": "^0.18.5",
+    "zustand": "^4.5.5"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.0.1",
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^9.2.1",
+    "cross-env": "^10.1.0",
+    "electron": "^39.2.3",
+    "electron-builder": "^26.0.12",
+    "electron-rebuild": "^3.2.9",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10",
+    "vitest": "^2.1.4",
+    "wait-on": "^9.0.3"
+  }
+}
