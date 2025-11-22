@@ -567,7 +567,6 @@ systemctl start ptsc-backend
 Proprietary - PTSC Internal Use Only
 
 ## 👥 Support
-
 For issues or questions, contact:
 Nguyễn Thị Thanh Hương
 PTSC Industrial Division
